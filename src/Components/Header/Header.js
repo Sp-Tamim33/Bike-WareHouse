@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Transition } from "@headlessui/react";
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -12,44 +13,46 @@ const Header = () => {
                         <div className="py-5 flex justify-between md:block">
                             <div className="flex justify-between items-center">
                                 <div className="flex-shrink-0">
-                                    <h1 className='text-3xl md:text-4xl text-black font-serif font-semibold'>Bike Warehouse</h1>
+                                    <Link to='/'>
+                                        <h1 className='text-3xl md:text-4xl text-black font-serif font-semibold'>Bike Warehouse</h1>
+                                    </Link>
                                 </div>
                                 <div className="hidden md:block md:pl-10">
                                     <div className="ml-10 flex items-baseline space-x-4">
-                                        <a
-                                            href="home"
-                                            className=" hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-xl font-medium"
+                                        <Link
+                                            to="home"
+                                            className=" hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
                                         >
                                             Home
-                                        </a>
+                                        </Link>
 
-                                        <a
-                                            href="home"
-                                            className=" hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-xl font-medium"
+                                        <Link
+                                            to="manage-inventory"
+                                            className=" hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
                                         >
-                                            Team
-                                        </a>
+                                            ManageInventory
+                                        </Link>
 
-                                        <a
-                                            href="home"
-                                            className=" hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-xl font-medium"
+                                        <Link
+                                            to="add-new"
+                                            className=" hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
                                         >
-                                            Projects
-                                        </a>
+                                            AddNew
+                                        </Link>
 
-                                        <a
-                                            href="home"
-                                            className=" bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-xl font-medium"
+                                        <Link
+                                            to="login"
+                                            className=" bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-lg font-medium"
                                         >
                                             LogIn
-                                        </a>
+                                        </Link>
 
-                                        <a
-                                            href="home"
-                                            className="hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-xl font-medium"
+                                        <Link
+                                            to="signup"
+                                            className="hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
                                         >
                                             SignUp
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -112,40 +115,40 @@ const Header = () => {
                         {(ref) => (
                             <div className="md:hidden" id="mobile-menu">
                                 <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                                    <a
-                                        href="home"
-                                        className="text-black px-3 py-2 rounded-md text-xl font-medium"
+                                    <Link
+                                        to="home"
+                                        className="text-black px-3 py-2 rounded-md text-lg font-medium"
                                     >
                                         Home
-                                    </a>
+                                    </Link>
 
-                                    <a
-                                        href="home"
+                                    <Link
+                                        to="home"
                                         className="block px-3 py-2 rounded-md text-base font-medium"
                                     >
-                                        Team
-                                    </a>
+                                        ManageInventory
+                                    </Link>
 
-                                    <a
-                                        href="home"
+                                    <Link
+                                        to="home"
                                         className="block px-3 py-2 rounded-md text-base font-medium"
                                     >
-                                        Projects
-                                    </a>
+                                        AddNew
+                                    </Link>
 
-                                    <a
-                                        href="home"
+                                    <Link
+                                        to="home"
                                         className="block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         LogIn
-                                    </a>
+                                    </Link>
 
-                                    <a
-                                        href="home"
+                                    <Link
+                                        to="home"
                                         className="block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         SignUp
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         )}
