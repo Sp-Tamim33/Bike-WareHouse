@@ -14,42 +14,49 @@ const Header = () => {
                             <div className="flex justify-between items-center">
                                 <div className="flex-shrink-0">
                                     <Link to='/'>
-                                        <h1 className='text-3xl md:text-4xl text-black font-serif font-semibold'>Bike Warehouse</h1>
+                                        <h1 className='text-3xl md:text-4xl text-black font-serif font-semibold'><span className='text-orange-500'>B</span>ike <span className='text-orange-500'>W</span>arehouse</h1>
                                     </Link>
                                 </div>
                                 <div className="hidden md:block md:pl-10">
                                     <div className="ml-10 flex items-baseline space-x-4">
                                         <Link
                                             to="home"
-                                            className=" hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
+                                            className=" hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
                                         >
                                             Home
                                         </Link>
 
                                         <Link
+                                            to="blog"
+                                            className=" hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
+                                        >
+                                            Blog
+                                        </Link>
+
+                                        <Link
                                             to="manage-inventory"
-                                            className=" hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
+                                            className=" hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
                                         >
                                             ManageInventory
                                         </Link>
 
                                         <Link
                                             to="add-new"
-                                            className=" hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
+                                            className=" hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
                                         >
                                             AddNew
                                         </Link>
 
                                         <Link
                                             to="login"
-                                            className=" bg-gray-700 hover:text-white text-white px-3 py-2 rounded-md text-lg font-medium"
+                                            className=" bg-orange-500 hover:text-white text-white px-3 py-2 rounded-md text-lg font-medium"
                                         >
                                             LogIn
                                         </Link>
 
                                         <Link
                                             to="signup"
-                                            className="hover:bg-gray-700 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
+                                            className="hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
                                         >
                                             SignUp
                                         </Link>
@@ -123,28 +130,35 @@ const Header = () => {
                                     </Link>
 
                                     <Link
-                                        to="home"
+                                        to="blog"
+                                        className="block px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                        Blog
+                                    </Link>
+
+                                    <Link
+                                        to="manage-inventory"
                                         className="block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         ManageInventory
                                     </Link>
 
                                     <Link
-                                        to="home"
+                                        to="add-new"
                                         className="block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         AddNew
                                     </Link>
 
                                     <Link
-                                        to="home"
+                                        to="login"
                                         className="block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         LogIn
                                     </Link>
 
                                     <Link
-                                        to="home"
+                                        to="signup"
                                         className="block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         SignUp
