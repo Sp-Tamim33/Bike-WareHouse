@@ -129,7 +129,7 @@ const Login = () => {
                         </button>
                     </form>
                     <p className='redirect'>
-                        New to SP's PhotoLab ?{" "}
+                        New to Bike Warehouse ?{" "}
                         <Link to='/signup' className='underline text-blue-500'>Create New Account</Link>
                     </p>
                     <p className='redirect'>
