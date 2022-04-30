@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { Transition } from "@headlessui/react";
+import { signOut } from "firebase/auth"
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [user] = useAuthState(auth);
     return (
         <div>
             <div>
@@ -47,19 +51,39 @@ const Header = () => {
                                             AddNew
                                         </Link>
 
-                                        <Link
-                                            to="login"
-                                            className=" bg-orange-500 hover:text-white text-white px-3 py-2 rounded-md text-lg font-medium"
-                                        >
-                                            LogIn
-                                        </Link>
+                                        {
+                                            user ?
+                                                <div>
+                                                    <Link
+                                                        to="add-new"
+                                                        className=" hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
+                                                    >
+                                                        MyItem
+                                                    </Link>
+                                                    <button
+                                                        onClick={() => signOut(auth)}
+                                                        className=" bg-orange-500 hover:text-white text-white px-3 py-2 rounded-md text-lg font-medium"
+                                                    >
+                                                        LogOut
+                                                    </button>
+                                                </div>
+                                                :
+                                                <div>
+                                                    <Link
+                                                        to="login"
+                                                        className=" bg-orange-500 hover:text-white text-white px-3 py-2 rounded-md text-lg font-medium"
+                                                    >
+                                                        LogIn
+                                                    </Link>
 
-                                        <Link
-                                            to="signup"
-                                            className="hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
-                                        >
-                                            SignUp
-                                        </Link>
+                                                    <Link
+                                                        to="signup"
+                                                        className="hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
+                                                    >
+                                                        SignUp
+                                                    </Link>
+                                                </div>
+                                        }
                                     </div>
                                 </div>
                             </div>
