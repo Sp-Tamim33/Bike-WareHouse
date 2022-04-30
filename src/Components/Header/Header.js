@@ -44,16 +44,17 @@ const Header = () => {
                                             ManageInventory
                                         </Link>
 
-                                        <Link
-                                            to="add-new"
-                                            className=" hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
-                                        >
-                                            AddNew
-                                        </Link>
+
 
                                         {
                                             user ?
                                                 <div>
+                                                    <Link
+                                                        to="add-new"
+                                                        className=" hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
+                                                    >
+                                                        AddNew
+                                                    </Link>
                                                     <Link
                                                         to="add-new"
                                                         className=" hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"

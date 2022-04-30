@@ -8,6 +8,7 @@ import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import ManageInventory from './Components/ManageInventory/ManageInventory';
 import NF404 from './Components/NotFound/NF404';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
 import Signup from './Components/Signup/Signup';
 
 function App() {
@@ -19,7 +20,11 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/manage-inventory' element={<ManageInventory />} />
-        <Route path='/add-new' element={<AddNew />} />
+        <Route path='/add-new' element={
+          <RequireAuth>
+            <AddNew />
+          </RequireAuth>
+        } />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='*' element={<NF404 />} />
