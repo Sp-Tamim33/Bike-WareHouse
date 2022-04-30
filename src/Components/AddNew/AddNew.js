@@ -1,9 +1,11 @@
 import React from 'react';
+import AddNewItem from '../AddNewItem/AddNewItem';
 
 const AddNew = () => {
     return (
         <div>
-            This is Add !
+
+            <AddNewItem />
         </div>
     );
 };
