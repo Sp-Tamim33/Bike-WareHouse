@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Suzuki",
+        "img": "https://i.ibb.co/YTWbXD1/SUZUKI.jpg",
+        "description": "The Boulevard represents a welcome addition for those hooked on the M109R’s muscular power plant and awesome performance, but seeking something more distinctive in style and appearance.",
+        "price": 12000,
+        "quatity": 1
+    },
+    {
+        "id": 2,
+        "name": "SUZUKI-SUPER3",
+        "img": "https://i.ibb.co/LZP44mF/SUZUKI-SUPER3.jpg",
+        "description": "The Boulevard represents a welcome addition for those hooked on the M109R’s muscular power plant and awesome performance, but seeking something more distinctive in style and appearance.",
+        "price": 12300,
+        "quatity": 1
+    },
+    {
+        "id": 3,
+        "name": "SUZUKI-SUPER",
+        "img": "https://i.ibb.co/KxX1BPj/SUZUKI-SUPER.jpg",
+        "description": "The Boulevard represents a welcome addition for those hooked on the M109R’s muscular power plant and awesome performance, but seeking something more distinctive in style and appearance.",
+        "price": 22300,
+        "quatity": 1
+    },
+    {
+        "id": 4,
+        "name": "SUZUKI-LIGHT",
+        "img": "https://i.ibb.co/WgJ1TXK/HUSQVARNA-DUAL-PURPOSE.jpg",
+        "description": "The Boulevard represents a welcome addition for those hooked on the M109R’s muscular power plant and awesome performance, but seeking something more distinctive in style and appearance.",
+        "price": 16500,
+        "quatity": 1
+    },
+    {
+        "id": 5,
+        "name": "KAWASAKI",
+        "img": "https://i.ibb.co/26GBw7S/KAWASAKI.jpg",
+        "description": "The Boulevard represents a welcome addition for those hooked on the M109R’s muscular power plant and awesome performance, but seeking something more distinctive in style and appearance.",
+        "price": 36500,
+        "quatity": 1
+    },
+    {
+        "id": 6,
+        "name": "KAWASAKI TURTUR",
+        "img": "https://i.ibb.co/RjPWDk3/Kawasaki-tutur.jpg",
+        "description": "The Boulevard represents a welcome addition for those hooked on the M109R’s muscular power plant and awesome performance, but seeking something more distinctive in style and appearance.",
+        "price": 76500,
+        "quatity": 1
+    }
+]
