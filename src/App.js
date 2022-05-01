@@ -10,6 +10,7 @@ import ManageInventory from './Components/ManageInventory/ManageInventory';
 import NF404 from './Components/NotFound/NF404';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import Signup from './Components/Signup/Signup';
+import Update from './Components/Update/Update';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/manage-inventory' element={<ManageInventory />} />
+        <Route path='/bike/:id' element={<Update />} />
         <Route path='/add-new' element={
           <RequireAuth>
             <AddNew />

@@ -5,13 +5,18 @@ const AddNewItem = () => {
     const [name, setName] = useState('');
     const [img, setImage] = useState('');
     const [description, setDescription] = useState('');
-    const [price, setPrice] = useState('');
-    const [quantity, setQuantity] = useState('');
+    const [pricee, setPrice] = useState('');
+    const [quantiti, setQuantity] = useState('');
 
     const handleForm = (event) => {
         event.preventDefault();
 
         // console.log({ name, image, description, price, quantity });
+
+        // parseing into number 
+        const quantity = parseInt(quantiti);
+        const price = parseInt(pricee)
+        // console.log(quantity);
 
         const bike = { name, img, description, price, quantity };
 
@@ -25,7 +30,7 @@ const AddNewItem = () => {
             .then(res => res.json())
             .then(data => console.log(data))
 
-        // event.target.reset();
+        event.target.reset();
 
     }
 
