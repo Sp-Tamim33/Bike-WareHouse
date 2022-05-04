@@ -22,7 +22,7 @@ const BikeItem = (props) => {
 
                     <p class="mb-3 font-normal">{bike.description}</p>
                     <p className='py-2 text-xl'>Price : {bike.price} tk</p>
-                    <p className='py-2 text-xl mb-3'>Quantity : {bike.quantity}</p>
+                    <p className='py-2 text-xl mb-3'>Quantity : {bike.quantity > 0 ? bike.quantity : "Out of Stock"}</p>
                     <p className='text-xl mb-3'>suplier : Sp Bike Suplier</p>
                     <button onClick={() => handleUpdateButton(bike._id)} class="inline-flex items-center py-2 px-3 text-xl font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         Update

@@ -57,7 +57,7 @@ const Header = () => {
                                                     </Link>
                                                     <Link
                                                         to="add-new"
-                                                        className=" hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
+                                                        className="mr-3 hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
                                                     >
                                                         MyItem
                                                     </Link>
@@ -79,7 +79,7 @@ const Header = () => {
 
                                                     <Link
                                                         to="signup"
-                                                        className="hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
+                                                        className="hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium ml-3"
                                                     >
                                                         SignUp
                                                     </Link>
