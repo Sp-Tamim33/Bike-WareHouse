@@ -56,7 +56,7 @@ const Header = () => {
                                                         AddNew
                                                     </Link>
                                                     <Link
-                                                        to="add-new"
+                                                        to="myitem"
                                                         className="mr-3 hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
                                                     >
                                                         MyItem
