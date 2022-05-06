@@ -37,12 +37,7 @@ const Header = () => {
                                             Blog
                                         </Link>
 
-                                        <Link
-                                            to="manage-inventory"
-                                            className=" hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
-                                        >
-                                            ManageInventory
-                                        </Link>
+
 
 
 
@@ -50,17 +45,18 @@ const Header = () => {
                                             user ?
                                                 <div>
                                                     <Link
-                                                        to="add-new"
+                                                        to="manage-inventory"
                                                         className=" hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
+                                                    >
+                                                        ManageInventory
+                                                    </Link>
+                                                    <Link
+                                                        to="add-new"
+                                                        className="mr-3 hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
                                                     >
                                                         AddNew
                                                     </Link>
-                                                    <Link
-                                                        to="myitem"
-                                                        className="mr-3 hover:bg-orange-500 hover:text-white text-black px-3 py-2 rounded-md text-lg font-medium"
-                                                    >
-                                                        MyItem
-                                                    </Link>
+
                                                     <button
                                                         onClick={() => signOut(auth)}
                                                         className=" bg-orange-500 hover:text-white text-white px-3 py-2 rounded-md text-lg font-medium"
