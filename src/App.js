@@ -22,7 +22,11 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/manage-inventory' element={<ManageInventory />} />
-        <Route path='/bike/:id' element={<Update />} />
+        <Route path='/bike/:id' element={
+          <RequireAuth>
+            <Update />
+          </RequireAuth>
+        } />
         <Route path='/add-new' element={
           <RequireAuth>
             <AddNew />
