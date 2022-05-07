@@ -20,7 +20,7 @@ const AddNewItem = () => {
 
         const bike = { name, img, description, price, quantity };
 
-        fetch('http://localhost:5000/bikes', {
+        fetch('https://polar-mesa-96378.herokuapp.com/bikes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
