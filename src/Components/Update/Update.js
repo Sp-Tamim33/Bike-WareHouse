@@ -7,7 +7,7 @@ const Update = () => {
     const [bike, setBike] = useState([]);
     const { id } = useParams();
     useEffect(() => {
-        const url = `https://polar-mesa-96378.herokuapp.com/bikes/${id}`;
+        const url = `https://bike-warehouse-server-production.up.railway.app/bikes/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setBike(data))
@@ -21,7 +21,7 @@ const Update = () => {
         const newBike = { ...bike, quantity: newQuantity };
         setBike(newBike)
         // console.log(id);
-        const url = `https://polar-mesa-96378.herokuapp.com/bikes/${id}`;
+        const url = `https://bike-warehouse-server-production.up.railway.app/bikes/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

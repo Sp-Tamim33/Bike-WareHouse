@@ -8,7 +8,7 @@ const ManageInventory = () => {
         const userConfirm = window.confirm('are you sure to delete ?')
         if (userConfirm) {
             // console.log(id);
-            const url = `https://polar-mesa-96378.herokuapp.com/bikes/${id}`;
+            const url = `https://bike-warehouse-server-production.up.railway.app/bikes/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

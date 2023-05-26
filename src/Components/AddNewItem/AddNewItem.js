@@ -20,7 +20,7 @@ const AddNewItem = () => {
 
         const bike = { name, img, description, price, quantity };
 
-        fetch('https://polar-mesa-96378.herokuapp.com/bikes', {
+        fetch('https://bike-warehouse-server-production.up.railway.app/bikes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
