@@ -20,7 +20,7 @@ const AddNewItem = () => {
 
         const bike = { name, img, description, price, quantity };
 
-        fetch('https://bike-warehouse-server-production.up.railway.app/bikes', {
+        fetch('https://bike-warehouse-server.onrender.com/bikes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

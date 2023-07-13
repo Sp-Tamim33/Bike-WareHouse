@@ -8,7 +8,7 @@ const ManageInventory = () => {
         const userConfirm = window.confirm('are you sure to delete ?')
         if (userConfirm) {
             // console.log(id);
-            const url = `https://bike-warehouse-server-production.up.railway.app/bikes/${id}`;
+            const url = `https://bike-warehouse-server.onrender.com/bikes/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
